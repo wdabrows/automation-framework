@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34996" started-at="2015-04-11T09:41:53Z" finished-at="2015-04-11T09:42:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34996" started-at="2015-04-11T09:41:53Z" finished-at="2015-04-11T09:42:28Z">
+      <class name="com.testframework.TestAllegro">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="setUp" is-config="true" duration-ms="10408" started-at="2015-04-11T11:41:53Z" finished-at="2015-04-11T11:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="testSearch" duration-ms="24434" started-at="2015-04-11T11:42:04Z" finished-at="2015-04-11T11:42:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="tearDown" is-config="true" duration-ms="143" started-at="2015-04-11T11:42:28Z" finished-at="2015-04-11T11:42:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testframework.TestAllegro -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
