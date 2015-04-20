@@ -25,24 +25,24 @@ public class TestAllegro {
 	@Test
 	public void testSearch() {
 		
-		HomePage.SearchField(driver).sendKeys("smartwatch");
-		HomePage.SearchBtn(driver).click();
-		SearchPage.SortMenu(driver).click();
-		SearchPage.SortType(driver).click();
+		HomePage.find_search_field(driver).sendKeys("smartwatch");
+		HomePage.find_search_btn(driver).click();
+		SearchPage.find_sort_menu(driver).click();
+		SearchPage.find_sort_type(driver).click();
 		try {
 			TimeUnit.SECONDS.sleep(5);
 		}
 		catch (InterruptedException e) {
 		}
-		SearchPage.FirstItem(driver).click();
+		SearchPage.find_first_item(driver).click();
 		
-		String Price = ItemPage.Price(driver).getText();
-		String Digits = Price.replaceAll("[^0-9.]", "");
-		int x = Integer.parseInt(Digits);
+		String PRICE = ItemPage.get_price(driver).getText();
+		String DIGITS = PRICE.replaceAll("[^0-9.]", "");
+		int x = Integer.parseInt(DIGITS);
 		
 	    	if (x>1000){
-	    		ItemPage.ShipmentBtn(driver).click();
-	    		String Log = ItemPage.ShipmentData(driver).getText();
+	    		ItemPage.find_shipment_btn(driver).click();
+	    		String Log = ItemPage.get_shipment_data(driver).getText();
 	    		try {
 	    			 
 	     

@@ -8,7 +8,7 @@ public class ItemPage {
 
 	private static WebElement element = null;
 	 
-    public static WebElement Price(WebDriver driver){
+    public static WebElement get_price(WebDriver driver){
  
          element = driver.findElement(By.id("priceValue"));
  
@@ -16,7 +16,7 @@ public class ItemPage {
  
          }
  
-     public static WebElement ShipmentBtn(WebDriver driver){
+     public static WebElement find_shipment_btn(WebDriver driver){
  
          element = driver.findElement(By.xpath("html/body/div[3]/div[3]/div[1]/div[2]/div[4]/div[1]/ul/li[2]/a"));
  
@@ -24,7 +24,7 @@ public class ItemPage {
  
          }
      
-     public static WebElement ShipmentData(WebDriver driver){
+     public static WebElement get_shipment_data(WebDriver driver){
     	 
          element = driver.findElement(By.xpath("html/body/div[3]/div[3]/div[1]/div[2]/div[4]/div[2]"));
  

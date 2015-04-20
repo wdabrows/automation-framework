@@ -8,7 +8,7 @@ public class HomePage {
 
 	private static WebElement element = null;
 	 
-    public static WebElement SearchField(WebDriver driver){
+    public static WebElement find_search_field(WebDriver driver){
  
          element = driver.findElement(By.cssSelector("#main-search-text"));
  
@@ -16,7 +16,7 @@ public class HomePage {
  
          }
  
-     public static WebElement SearchBtn(WebDriver driver){
+     public static WebElement find_search_btn(WebDriver driver){
  
          element = driver.findElement(By.cssSelector(".sprite.search-btn"));
  
