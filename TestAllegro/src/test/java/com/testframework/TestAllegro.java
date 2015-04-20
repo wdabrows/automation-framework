@@ -25,24 +25,24 @@ public class TestAllegro {
 	@Test
 	public void testSearch() {
 		
-		HomePage.find_search_field(driver).sendKeys("smartwatch");
-		HomePage.find_search_btn(driver).click();
-		SearchPage.find_sort_menu(driver).click();
-		SearchPage.find_sort_type(driver).click();
+		HomePage.findSearchField(driver).sendKeys("smartwatch");
+		HomePage.findSearchBtn(driver).click();
+		SearchPage.findSortMenu(driver).click();
+		SearchPage.findSortType(driver).click();
 		try {
 			TimeUnit.SECONDS.sleep(5);
 		}
 		catch (InterruptedException e) {
 		}
-		SearchPage.find_first_item(driver).click();
+		SearchPage.findFirstItem(driver).click();
 		
-		String PRICE = ItemPage.get_price(driver).getText();
+		String PRICE = ItemPage.getPrice(driver).getText();
 		String DIGITS = PRICE.replaceAll("[^0-9.]", "");
 		int x = Integer.parseInt(DIGITS);
 		
 	    	if (x>1000){
-	    		ItemPage.find_shipment_btn(driver).click();
-	    		String Log = ItemPage.get_shipment_data(driver).getText();
+	    		ItemPage.findShipmentBtn(driver).click();
+	    		String LOG = ItemPage.getShipmentData(driver).getText();
 	    		try {
 	    			 
 	     
@@ -54,7 +54,7 @@ public class TestAllegro {
 	     
 	    			FileWriter fw = new FileWriter(file.getAbsoluteFile());
 	    			BufferedWriter bw = new BufferedWriter(fw);
-	    			bw.write(Log);
+	    			bw.write(LOG);
 	    			bw.close();
 	     
 	     
