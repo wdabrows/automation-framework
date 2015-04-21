@@ -36,13 +36,13 @@ public class TestAllegro {
 		}
 		SearchPage.findFirstItem(driver).click();
 		
-		String PRICE = ItemPage.getPrice(driver).getText();
-		String DIGITS = PRICE.replaceAll("[^0-9.]", "");
-		int x = Integer.parseInt(DIGITS);
+		String price = ItemPage.getPrice(driver).getText();
+		String digits = price.replaceAll("[^0-9.]", "");
+		int x = Integer.parseInt(digits);
 		
 	    	if (x>1000){
 	    		ItemPage.findShipmentBtn(driver).click();
-	    		String LOG = ItemPage.getShipmentData(driver).getText();
+	    		String log = ItemPage.getShipmentData(driver).getText();
 	    		try {
 	    			 
 	     
@@ -54,7 +54,7 @@ public class TestAllegro {
 	     
 	    			FileWriter fw = new FileWriter(file.getAbsoluteFile());
 	    			BufferedWriter bw = new BufferedWriter(fw);
-	    			bw.write(LOG);
+	    			bw.write(log);
 	    			bw.close();
 	     
 	     

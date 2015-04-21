@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34858" started-at="2015-04-20T18:24:58Z" finished-at="2015-04-20T18:25:33Z">
+  <suite name="Default suite" duration-ms="25249" started-at="2015-04-21T11:43:01Z" finished-at="2015-04-21T11:43:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34858" started-at="2015-04-20T18:24:58Z" finished-at="2015-04-20T18:25:33Z">
+    <test name="Default test" duration-ms="25249" started-at="2015-04-21T11:43:01Z" finished-at="2015-04-21T11:43:26Z">
       <class name="com.testframework.TestAllegro">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="setUp" is-config="true" duration-ms="14930" started-at="2015-04-20T20:24:58Z" finished-at="2015-04-20T20:25:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="setUp" is-config="true" duration-ms="5708" started-at="2015-04-21T13:43:01Z" finished-at="2015-04-21T13:43:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="testSearch" duration-ms="19772" started-at="2015-04-20T20:25:13Z" finished-at="2015-04-20T20:25:33Z">
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="testSearch" duration-ms="19391" started-at="2015-04-21T13:43:07Z" finished-at="2015-04-21T13:43:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="tearDown" is-config="true" duration-ms="145" started-at="2015-04-20T20:25:33Z" finished-at="2015-04-20T20:25:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testframework.TestAllegro@2a18f23c]" name="tearDown" is-config="true" duration-ms="137" started-at="2015-04-21T13:43:26Z" finished-at="2015-04-21T13:43:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
